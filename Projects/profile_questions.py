@@ -9,10 +9,10 @@ def is_alien_give_sentence():
     return ("{} is {} years old and is an alien!!!".format(name,age))
 
 
-if alien.lower() == "no" or "false":
-    print ("Whew")
+if alien.lower() in ["no","false"]: # Learned that this code was simpler/more efficient because this goes into the list ["no","false"] and checks if the input (which was converted into lowercase) contains any of these strings
+    print ("\nWhew")
     print(not_alien_give_sentence())
 else:
-    print ("Whoa")
+    print ("\nWhoa")
     print(is_alien_give_sentence())
 
