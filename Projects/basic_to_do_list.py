@@ -1,6 +1,5 @@
 # This basic to do list project asks the user to add something to the to do list which is then displayed. Once the to do list is displayed the program asks if they want to delete any task - if they say no - ask if they want to quit - if yes then quit, if no then repeat the 1st step
 
-
 #To do list
 to_do_list=[]
 
@@ -36,4 +35,3 @@ while program_status== True:
             print("Remember to enter yes or no next time!\nRestarting the process anyways...")
     else:
         print("Enter yes or no next time!")
-    
