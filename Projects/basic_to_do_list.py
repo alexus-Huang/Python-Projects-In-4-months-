@@ -21,11 +21,15 @@ while program_status== True:
     want_to_delete=input("Do you want to delete any of the tasks? (yes/no)")
     if want_to_delete == "yes":
         which_task_to_delete=input("Which task do you want to delete?") #ask the user to input what item they want to delete
-        if which_task_to_delete in to_do_list == False:  #bug starts here. 
-            print("That item is not in the list!")
+        if which_task_to_delete in to_do_list:
+            print("The item is in the list")
         else:
-            to_do_list.remove(which_task_to_delete)  # This is where the error message occurs when the user enters the incorrect task name
-            print(to_do_list)
+            print("The item is not in the list")
+        # if which_task_to_delete in to_do_list == False:  #bug starts here. 
+        #     print("That item is not in the list!")
+        # else:
+        #     to_do_list.remove(which_task_to_delete)  # This is where the error message occurs when the user enters the incorrect task name
+        #     print(to_do_list)
     else:  # ask the user if they want to quit the program
         want_to_quit=input("Would you like to quit the program? (yes/no)")
         if want_to_quit=="yes":
