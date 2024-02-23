@@ -26,11 +26,14 @@ while program_status== True:
             print("{} was removed from the list\nThis is your current list: {}".format(which_task_to_delete,to_do_list)) #Tells the user what task was removed and shows them their new to do list
         else:
             print("The item is not in the list") 
-    else:  # ask the user if they want to quit the program
+    elif want_to_delete == "no":  # ask the user if they want to quit the program
         want_to_quit=input("Would you like to quit the program? (yes/no)")
         if want_to_quit=="yes":
-            program_status== False
             exit()
+        elif want_to_quit=="no":
+            print("Restarting the process!")
         else:
-            program_status==True
+            print("Remember to enter yes or no next time!\nRestarting the process anyways...")
+    else:
+        print("Enter yes or no next time!")
     
