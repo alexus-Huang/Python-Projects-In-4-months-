@@ -35,3 +35,6 @@ while program_status== True:
             print("Remember to enter yes or no next time!\nRestarting the process anyways...")
     else:
         print("Enter yes or no next time!")
+
+# Link to google docs which shows my thought process before creating this project and during this project
+# https://docs.google.com/document/d/1LK8tpSf0Gy-x_WODfOT1MNC76TzgvPZzJuJC-vA-9Pg/edit?usp=sharing
