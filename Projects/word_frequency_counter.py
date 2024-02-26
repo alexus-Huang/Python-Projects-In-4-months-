@@ -8,7 +8,12 @@ user_text = input("Enter in some text to see how many repeated words there are:"
 word_count = 0
 
 split_words=user_text.split()  # split each word from the user's input and put it in a list
-for every_word in split_words:
-    print(every_word.count(every_word))
-    repeated_words=dict({every_word:word_count})
-    print(repeated_words)
+for every_word in split_words:  # go through every word in the list to see if there are any repeated words 
+    count_words = every_word.count(every_word)
+    if every_word != 1: # this conditional statement sees if the word repeats or doesn't repeat.The problem is here since the word count will always be one
+        word_count+=1
+    else:
+        word_count=1
+    repeated_words=dict({every_word:count_words})
+    word_frequencies.update(repeated_words)
+print(word_frequencies)
