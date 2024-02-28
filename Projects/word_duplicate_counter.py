@@ -22,3 +22,13 @@ After counting the words, it will print out the words and their frequencies
 
 
 # Rewriting everything to see if the problem can be solved
+
+user_text={}   # empty dictionary
+user_input=input("Enter some text to see if there are any repeated words:")   # ask the user for their input
+user_input_split_text=user_input.split()
+word_count=0
+#write some code that goes through the list and pulls out (use a for loop?)
+for every_word in user_input_split_text:
+    print(every_word)
+    user_text.update({every_word:word_count})  # must go through each word 
+print(user_text)
