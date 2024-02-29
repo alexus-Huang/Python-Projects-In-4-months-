@@ -26,7 +26,7 @@ def update_list(): # The user can update a student's name and grade
         class_score[new_name]=class_score.pop(student_name)  # This is something I found on Stack Overflow. I learned that this was a simple way of switching out keys in dictionaries. This code removes the old name and assigns the dictionary key with new_name.
     else:
         new_grade=float(input("What is the student's new grade?"))
-        class_score[student_name]=new_grade
+        class_score[student_name]=new_grade # This was something I didn't know worked, but learned by accident when I was trying to swap the keys in the dictionary. I learned that this line of code grabs the key and takes in new_grade as the value and puts student_name(key) and new_grade(value) together.
     print(class_score)
 
 
