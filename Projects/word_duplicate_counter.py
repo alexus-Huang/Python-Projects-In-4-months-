@@ -26,9 +26,8 @@ After counting the words, it will print out the words and their frequencies
 user_text={}   # empty dictionary
 user_input=input("Enter some text to see if there are any repeated words:")   # ask the user for their input
 user_input_split_text=user_input.split()
-word_count=0
-#write some code that goes through the list and pulls out (use a for loop?)
+word_count={}
+duplicate_words=[]
 for every_word in user_input_split_text:
-    print(every_word)
-    user_text.update({every_word:word_count})  # must go through each word 
-print(user_text)
+    word_count[every_word] = word_count.get(every_word,0)+1  #word_count[every_word] goes through each word and assigns itself that word. On the right side, thats where the dictionary gets each letter and adds 1 to every letter since they appear in the user's text. This line of code was from ChatGPT 3.5. I've learned a lot after looking and trying this code out after explaining how it works.
+    print(word_count)
