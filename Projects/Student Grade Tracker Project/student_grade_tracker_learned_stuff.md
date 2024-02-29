@@ -1,4 +1,4 @@
-What I learned:
+#What I learned:
 - Dictionaries in Python don't allow duplicates
 
 # Problems that came to mind:
