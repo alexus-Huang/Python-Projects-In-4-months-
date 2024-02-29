@@ -30,10 +30,6 @@ def update_list(): # The user can update a student's name and grade
     print(class_score)
 
 
-def quit_program():
-    quit
-
-
 
 class_score={}
 how_many_students=int(input("How many students are you grading?"))
