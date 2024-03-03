@@ -10,5 +10,4 @@
         - The game is currently using an if statement and uses an if else statement to run the game. This isn't efficient because if there were multiple themes, then this process of using conditional statements wouldn't be efficient.
     - The word doesn't change until after the user guesses the correct word
         - The program currently switches the word after every guess
-
 - Created in an hour
